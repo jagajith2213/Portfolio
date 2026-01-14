@@ -1,0 +1,92 @@
+.footer {
+    width: 100%;
+    padding: 6rem 0;
+    background-color: rgba(19,19,19,0.8);
+    overflow-x: hidden;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.left{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.call{
+    font-size: 700;
+    font-weight: 600;
+}
+.call:hover{
+    color:rgb(38, 128, 128);
+}
+
+.location{
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+.location p{
+    line-height: 30px;
+}
+.right{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.social{
+    margin-top: 1rem;
+}
+h4{
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+}
+p{
+    font-size: 1.2rem;
+}
+@media screen and (max-width:640px){
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Back-to-top fixed button */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(243, 251, 3, 0.75);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease, border-radius 160ms ease;
+    z-index: 1000;
+}
+.back-to-top:hover {
+    transform: translateY(-4px) scale(1.02);
+    transition: all 0.9s ease-in-out;
+    background: rgb(38, 128, 128);
+}
+.back-to-top:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38,128,128,0.25);
+    border-radius: 8px;
+}
+
+/* hide on very small screens if it conflicts with other controls */

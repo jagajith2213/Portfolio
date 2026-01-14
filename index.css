@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', serif;
+}
+
+body{
+    background-color:black;
+}
+
+h1,h4,p,a{
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+.btn{
+  padding : 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: black;
+  border: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-light{
+  background: transparent;
+  color: white;
+}
+.btn:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: navajowhite;
+  transition: 0.3s;
+}
